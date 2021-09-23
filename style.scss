@@ -1,0 +1,66 @@
+*,
+*::after,
+*::before {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+.main {
+    min-height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(to right, #2193b0, #6dd5ed);
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    max-width: 600px;
+    justify-content: center;
+    flex-direction: column;
+    background: white;
+    padding: 50px 30px;
+    border-radius: 13px;
+
+    &__img {
+        max-width: 40%;
+        border-radius: 50%;
+        margin-bottom: 12px;
+    }
+
+    &__name {
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+
+    &__job {
+        color: #12829b;
+        font-size: 1.1rem;
+        margin: 0px 0 19px 0;
+    }
+
+    &__description {
+        font-size: 1.3rem;
+        text-align: center;
+    }
+
+    &__buttons {
+        margin-top: 30px;
+        width: 30%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-btn {
+            width: 24px;
+            background: none;
+            border: none;
+            cursor: pointer;
+        }
+    }
+
+}
